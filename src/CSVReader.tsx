@@ -230,7 +230,7 @@ export default class CSVReader extends React.Component<Props, State> {
   };
 
   uploadFile = (file: any) => {
-    this.displayFileInfo(file);
+    // this.displayFileInfo(file);
     this.setState({ file });
 
     const { onDrop, onFileLoad, onError, config = {} } = this.props;

@@ -1,15 +1,14 @@
 {
-  "name": "react-papaparse",
-  "version": "3.5.0",
-  "description": "Fast and powerful React CSV parser for the browser that supports web workers and streaming large files. Converts CSV to JSON and JSON to CSV.",
-  "author": "Bunlong <bunlong.van@gmail.com>",
-  "license": "MIT",
+  "name": "react-papaparse-shmaxi",
+  "version": "3.6.0",
+  "description": "A fork of the https://www.npmjs.com/package/react-papaparse repo",
+  "author": "Shmaxi <max.vlashchuk@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bunlong/react-papaparse.git"
+    "url": "git+https://github.com/shmaxi/react-papaparse.git"
   },
   "bugs": {
-    "url": "https://github.com/Bunlong/react-papaparse.git/issues"
+    "url": "https://github.com/shmaxi/react-papaparse.git/issues"
   },
   "keywords": [
     "react",
@@ -43,7 +42,6 @@
     "workers",
     "typescript"
   ],
-  "homepage": "https://react-papaparse.js.org",
   "main": "dist/react-papaparse.js",
   "module": "dist/react-papaparse.es.js",
   "jsnext:main": "dist/react-papaparse.es.js",
