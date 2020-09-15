@@ -1,6 +1,6 @@
 {
   "name": "react-papaparse-shmaxi",
-  "version": "3.6.0",
+  "version": "3.6.5",
   "description": "A fork of the https://www.npmjs.com/package/react-papaparse repo",
   "author": "Shmaxi <max.vlashchuk@gmail.com>",
   "repository": {

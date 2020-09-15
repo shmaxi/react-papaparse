@@ -413,7 +413,7 @@ export default class CSVReader extends React.Component<Props, State> {
       <>
         <input
           type="file"
-          accept="text/csv"
+          accept=".csv,.xls,.xlsx"
           ref={this.inputFileRef}
           style={styles.inputFile}
           onChange={(e) => this.fileChange(e)}
@@ -436,51 +436,52 @@ export default class CSVReader extends React.Component<Props, State> {
             }}
           >
             {files && files.length > 0 ? (
-              <div
-                style={Object.assign(
-                  {},
-                  styles.dropFile,
-                  styles.column,
-                  style?.dropFile,
-                )}
-              >
-                {this.renderDropFileRemoveButton()}
-                <div style={styles.column}>
-                  <span
-                    style={Object.assign(
-                      {},
-                      styles.fileSizeInfo,
-                      style?.dropFile?.fileSizeInfo,
-                    )}
-                    ref={this.fileSizeInfoRef}
-                  />
-                  <span
-                    style={Object.assign(
-                      {},
-                      styles.fileNameInfo,
-                      style?.dropFile?.fileNameInfo,
-                    )}
-                    ref={this.fileNameInfoRef}
-                  />
-                </div>
-                {files &&
-                  files.length > 0 &&
-                  !isCanceled &&
-                  !this.props.noProgressBar && (
-                    <ProgressBar
-                      // TODO - Delete progressBar
-                      style={Object.assign(
-                        {},
-                        progressBarColor
-                          ? { backgroundColor: progressBarColor }
-                          : {},
-                        this.props.style?.dropFile?.progressBar,
-                      )}
-                      progressBar={progressBar}
-                      displayProgressBarStatus={displayProgressBarStatus}
-                    />
-                  )}
-              </div>
+              null
+              // <div
+              //   style={Object.assign(
+              //     {},
+              //     // styles.dropFile,
+              //     // styles.column,
+              //     // style?.dropFile,
+              //   )}
+              // >
+              //   {this.renderDropFileRemoveButton()}
+              //   <div style={styles.column}>
+              //     <span
+              //       style={Object.assign(
+              //         {},
+              //         styles.fileSizeInfo,
+              //         style?.dropFile?.fileSizeInfo,
+              //       )}
+              //       ref={this.fileSizeInfoRef}
+              //     />
+              //     <span
+              //       style={Object.assign(
+              //         {},
+              //         styles.fileNameInfo,
+              //         style?.dropFile?.fileNameInfo,
+              //       )}
+              //       ref={this.fileNameInfoRef}
+              //     />
+              //   </div>
+              //   {files &&
+              //     files.length > 0 &&
+              //     !isCanceled &&
+              //     !this.props.noProgressBar && (
+              //       <ProgressBar
+              //         // TODO - Delete progressBar
+              //         style={Object.assign(
+              //           {},
+              //           progressBarColor
+              //             ? { backgroundColor: progressBarColor }
+              //             : {},
+              //           this.props.style?.dropFile?.progressBar,
+              //         )}
+              //         progressBar={progressBar}
+              //         displayProgressBarStatus={displayProgressBarStatus}
+              //       />
+              //     )}
+              // </div>
             ) : (
               children
             )}
